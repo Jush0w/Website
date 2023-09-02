@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),
+     rgba(0,0,0,0.7)), url(images/background.webp);
+     background-position: center;
+     background-size: cover;
+     position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 200px;
+    
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 24px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #884A39;
+    display: block;
+    margin: auto;
+    transition: 0.5s
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: monospace;
+}
+
+.text-box h1 {
+    font-size: 62px;
+    font-family: monospace;
+}
+
+.text-box p {
+    margin: 20px 0 40px;
+    font-size: 14px;
+    line-height: 1.6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.explore-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 24px;
+    padding: 12px 34px;
+    font-size: 13px;
+    font-family: monospace;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.explore-btn:hover {
+    border: 1px solid #884A39;
+    background: #884A39;
+    transition: 1s;
+}
+
+.home-img {
+    display: block;
+    margin-left: 50%;
+    width: 50%;
+}
+
+/*----OUR COFFEES ----*/
+
+.Us {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-weight: 600;
+    font-family: monospace;
+    font-size: 36px;
+}
+
+p {
+    color: black;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.coffee-col {
+    flex-basis: 31%;
+    background: #FFC26F;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.coffee-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+}
+
+.about-us {
+    display: block;
+    margin-left: 0%;
+    margin-bottom: 5%;
+    width: 50%;
+    padding: 20px 12px;
+}
+
+img {
+    border-radius: 20px;
+}
+
+/*----COFFEE OFFERS ---- */
+
+.h-offers {
+    font-weight: 600;
+    font-family: monospace;
+    font-size: 36px;
+}
+
+.Offers {
+    padding: 10px 5%;
+
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.products .card {
+    width: 310px;
+    background: white;
+    border-radius: 20px;
+    padding: 5px;
+    margin-bottom: 20px;
+    display: 0%;
+    transition: 0.5s;
+}
+
+.products .card:hover {
+    display: 100%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.products .card img {
+    height: 250px;
+    width: 100%;
+}
+
+.products .card .type {
+    padding: 5px 20px;
+    opacity: 0.8;
+    font-family: monospace;
+}
+
+.products .card .product-name {
+    font-weight: 900;
+    font-size: 20px;
+    font-family: monospace;
+    color: #424144;
+    padding: 0 20px;
+}
+
+.products .card .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.products .card .box .price {
+    color: #884A39;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.products .card .box .btn {
+    font-size: 13px;
+    font-family: monospace;
+    color: #884A39;
+    padding: 10px 18px;
+    font-weight: 900;
+    border: 1px solid #884A39;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.products .card .box .btn:hover {
+    cursor: pointer;
+    background-color: #884A39;
+    color: white;
+}
+
+/*---- GALLERY ----*/
+
+.gallery .img-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.gallery .img-box .gallery-img {
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+}
+
+.gallery .img-box .gallery-img img {
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    transition: 0.7s;
+}
+
+.gallery .img-box .gallery-img img:hover {
+    width: 100%;
+    padding-bottom: 15px;
+    transform: scale(1.1);
+}
+
+/*---- FOOTER ----*/
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.author {
+    font-family: monospace;
+}
+
+.icons .fa {
+    color: #884A39;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+/*---- ABOUT US PAGE----*/
+
+.sub-header {
+    height: 50vh;
+    width: 100%;
+    background-image:  linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)), url(images/abt.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.sub-header h1 {
+    margin-top: 100px;
+}
+
+.know {
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
